@@ -1,5 +1,5 @@
 nav {
-  background-color: darkblue;
+  background-color: darkgreen;
   padding: 10px;
 }
 
@@ -22,5 +22,34 @@ img {
 }
 
 p {
-  padding: 10ox;
+  padding: 0px;
+}
+
+main {
+  max-width: 600px;
+}
+
+aside {
+  width: 350px;
+  margin: 20px;
+  border: 20px;
+  padding: 13px;
+  background-color: darkgreen;
+  color: white;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  margin-top: 13px;
+  border-top: 5px solid rgb(10, 10, 10);
+  text-align: center;
 }
