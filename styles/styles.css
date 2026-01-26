@@ -1,16 +1,29 @@
+:root {
+  --primary-color: rgb(155, 34, 50);
+  --text-color-a: rgba(255, 255, 255, 0.863);
+  --text-color-b: black;
+  --heading-font: 'roboto', sans-serif;
+  --body-font: 'arial', 'helvetica', sans-serif;
+
+
+
+}
+
 nav {
-  background-color: darkgreen;
+  background-color: var(--primary-color);
   padding: 10px;
 }
 
 nav a {
-  color: white;
+  font-family: var(--main-font);
+  color: var(--text-color-a);
   display: block;
   padding: 20px;
 }
 
 h1 {
-  color: darkblue;
+  color: var(--text-color-b);
+  font-family: var(--main-font);
 }
 
 main img {
@@ -22,6 +35,7 @@ main img {
 }
 
 p {
+  font-family: var(--body-font);
   padding: 0px;
 }
 
@@ -34,8 +48,8 @@ aside {
   margin: 20px;
   border: 20px;
   padding: 13px;
-  background-color: darkgreen;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color-a);
 }
 
 aside img {
