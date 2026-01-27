@@ -7,9 +7,7 @@
 :root {
   --primary-color: teal;
   --secondary-color: purple;
-  --accent1-color: rgb(71, 2, 71);
-  --accent2-color: white;
-  --accent3-color: black;
+  --accent1-color: white;
   --heading-font: "Arial Black", sans-serif;
   --body-font: 'Courier New', monospace;
 }
@@ -63,7 +61,7 @@ article {
 }
 
 .hero article {
-  color: var(--accent2-color);
+  color: var(--accent1-color);
   padding: 20px;
   background-color: var(--secondary-color);
   opacity: 0.9;
@@ -88,10 +86,11 @@ h1 {
 
 section h2 {
   text-align: center;
+  background-color: var(--secondary-color);
 }
 
-footer img {
-  width: 30px;
+.socialmedia img {
+  width: 20px;
+  height: auto;
   text-decoration: none;
-  float: center;
 }
