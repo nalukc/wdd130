@@ -7,6 +7,7 @@
 :root {
   --primary-color: teal;
   --secondary-color: purple;
+  --secondary-color-transparent: rgba(128, 0, 128, 0.7);
   --accent1-color: white;
   --heading-font: "Arial Black", sans-serif;
   --body-font: 'Courier New', monospace;
@@ -15,6 +16,12 @@
 header img {
   width: 130px;
   height: auto;
+}
+
+header a {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  font-size: 1rem;
 }
 
 body {
@@ -61,18 +68,23 @@ article {
 }
 
 .hero article {
+  position: absolute;
+  bottom: .1rem;
+  left: 1.5rem;
   color: var(--accent1-color);
-  padding: 20px;
-  background-color: var(--secondary-color);
-  opacity: 0.9;
+  padding: 1px;
+  background-color: var(--secondary-color-transparent);
   font: var(--body-font);
+  font-family: var(--body-font);
+  font-size: .9rem;
 }
 
 .hero article img {
   float: right;
   width: 110px;
   margin: 2px;
-  box-shadow: 5px 5px 8px var(--primary-color);
+  border: solid var(--primary-color);
+  margin-top: 10px;
 }
 
 h1 {
@@ -81,7 +93,6 @@ h1 {
   left: 2rem;
   background-color: var(--primary-color);
   opacity: 0.8;
-
 }
 
 section h2 {
@@ -93,4 +104,10 @@ section h2 {
   width: 20px;
   height: auto;
   text-decoration: none;
+}
+
+.history p {
+  color: var(--accent1-color);
+  font-size: 1.1rem;
+  font-family: var(--body-font);
 }
