@@ -5,6 +5,8 @@
 
 }
 
+
+
 :root {
   --primary-color: rgb(155, 34, 50);
   --text-color-a: rgba(255, 255, 255, 0.863);
@@ -17,20 +19,32 @@
 }
 
 nav {
+  color: var(--text-color-aS);
   background-color: var(--primary-color);
   padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 nav a {
-  font-family: var(--main-font);
+  font-family: var(--heading-font);
   color: var(--text-color-a);
   display: block;
   padding: 20px;
+  font-size: 1rem;
 }
 
 h1 {
   color: var(--text-color-b);
   font-family: var(--main-font);
+  border-bottom: 4px solid var(--primary-color);
 }
 
 main img {
@@ -47,14 +61,22 @@ p {
   padding: 5px;
 }
 
+.grid {
+  display: grid;
+  align-items: center;
+}
+
 main {
+  grid-column: 2/3;
   max-width: 600px;
 }
 
 aside {
   position: relative;
-  width: 350px;
+  width: flex;
   text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
@@ -65,7 +87,7 @@ aside img {
 aside h2 {
   position: absolute;
   top: 20px;
-  left: 80px;
+  left: 100px;
   color: black;
 }
 
