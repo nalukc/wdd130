@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalu K. Carvalho| WDD 130</title>
+  <meta name="description"
+    content="A poll to ask users their favorite browser, their personla info, whether they have a pet, and where they've lived">
+  <meta name="author" content="Nalu K. Carvalho">
+  <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+
+
+<body>
+  <header>
+    <h1>WDD 130 | HTML Form - User Poll</h1>
+  </header>
+  <form>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <div class="form-item column 2">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-item column2">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Questions</legend>
+      <div class="form-item column1">
+        <label for="browser">What is your favorite Browser?</label>
+        <select name="browser" id="browser">
+          <option value="Chrome">Chrome</option>
+          <option value="Safari">Safari</option>
+          <option value="Ask Jeeves">Ask Jeeves</option>
+        </select>
+      </div>
+      <div class="form-item column1">
+        <label>
+          <input type="checkbox" name="pet">
+          Do you have a household pet?
+        </label>
+      </div>
+
+      <label for="feedback">List the places you have lived:</label>
+      <textarea name="feedback" id="feedback" rows="4" placeholder="Hamuras, Pipeline, Rocks, Haleiwa, Vellsyland">
+      </textarea>
+    </fieldset>
+    <button type="submit">Submit Poll</button>
+  </form>
+  <footer>
+    <p>
+      2026 | HTML- Form- User Poll Activity | Nalu K Carvalho
+    </p>
+  </footer>
+</body>
