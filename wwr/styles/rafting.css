@@ -13,6 +13,13 @@
   --body-font: 'Courier New', monospace;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 header {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -208,7 +215,6 @@ footer p {
   background-color: var(--secondary-color);
   opacity: 1;
   position: static;
-  background-color: var(--secondary-color);
   color: var(--accent1-color);
   border-style: solid;
   border-color: black;
