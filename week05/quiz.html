@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalu K. Carvalho| WDD 130</title>
+  <meta name="description" content="Page to practice using forms in HTML by making a quiz form">
+  <meta name="author" content="Nalu K. Carvalho">
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+  <main class="box">
+    <h1>Loyal Genwunners Quiz</h1>
+    <form>
+      <div class="quiz-item box">
+        <label for="q1">1. What's the name of the first gym leader in Pokemon Red?
+          <input type="text" id="q1" name="q1"></label>
+      </div>
+      <div class="quiz-item box">
+        <label for="q2">2. Describe in detail who the villanous team in Pokemon Gold is, and what their mission
+          is.
+          <textarea id="q2" name="q2"></textarea></label>
+      </div>
+      <div class="quiz-item box">
+        <label for="q3">3. In Pokemon Sapphire the Pokemon League Champion uses what pokemon as his ace?
+          <select id="q3" name="q3">
+            <option value="" selected disabled>-Please Select-</option>
+            <option value="a">A. Anorith</option>
+            <option value="b">B. Dragonite</option>
+            <option value="c">C. Metagross</option>
+            <option value="d">D. Tyrannitar</option>
+          </select></label>
+      </div>
+      <div class="quiz-item box">
+        <label for="q4">4. Adding the total amount, how many gyms are in these three regions combined?
+          <code class="box">Alola, Hoenn, Unova</code>
+          <input type="number" id="q4" name="q4"></label>
+      </div>
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
